@@ -1,0 +1,249 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html{font-size: 14px;}
+#container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+/*Menubar*/
+#menubar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #fff; 
+    gap: 11vh;
+}
+
+#sec1, #sec2, #sec3 {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+   
+}
+
+.menuIcons {
+    margin-right: 10px;
+}
+
+.material-symbols-outlined {
+   
+    font-size: 24px;
+}
+
+#menubar #sec1 img {
+    max-width: 100%;
+    height: auto;
+    height: 2rem;
+}
+#menubar #sec1  {
+  
+   gap:2vh;
+}
+#menubar #sec3  {
+   
+    gap:2vh;
+ }
+ #menubar #sec2{
+    gap:2vh;
+    margin-bottom: 25vh;
+ }
+
+
+
+/* First Component  */
+#comp-1{
+    padding: 8vh;
+    background-color: #fafafa;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2vh;
+
+} 
+#profile{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    align-items: center;
+}
+#welcome{
+    display:flex;
+    flex-direction: column;
+}
+#welcome #head{font-size: 2rem;
+}
+#profile img{
+    height: 100%;
+}
+#profile #profileImg{
+    height: 100%;
+}
+#today{
+    display: flex;
+    flex-direction: column;
+    gap:1vh;
+    padding: 1vh;
+}
+
+.heading{
+    font-weight: 501;
+    font-size:1rem ;
+}
+#otherbalance{
+    display: flex;
+   flex-direction: column;
+}
+
+  .btn-primary {
+    color: #fff;
+    background-color: #4935ff;
+    border-color: #3e2be9;
+    border-radius: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+  }
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #5b49ff;
+    border-color: #4a37f0;
+  }
+  .btn-primary:active {
+    color: #fff;
+    background-color: #5b49ff;
+    border-color: #4a37f0;
+  }
+  .dropdown{
+    margin-top: 1vw;
+  }
+  #transaction{
+      display: flex;
+      flex-direction: column;
+      
+      padding: 1vh;
+      gap: 0.7vh;
+    margin-top: 2vh;
+  }
+  .transactionItem{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:.8rem ;
+  }
+  .transactiondetails{
+    font-weight: 501;
+  }
+  .transactionItem .date
+  {
+      color: #9b9b9b;
+     
+      font-size: 0.8rem;
+      font-weight: 500;
+  }
+  #recentTran{
+    margin-bottom: 2vh;
+  }
+  #accbalance #amount{
+      font-weight: bold;
+      font-size: 1.5rem;
+  }
+  #otherbalance1{
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  .balanceDetails{
+      color: #9b9b9b;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 500;
+      font-size: 0.8rem;
+  }
+  hr{margin-top: 0.8rem;
+    margin-bottom: 0.8rem;}
+
+
+
+/* Second Component */
+#comp-2{
+  display: flex;
+flex-direction: column;
+}
+#RetIncomeHeader
+{
+  color:#5745ff
+}
+#RetirementIncome{
+  width: 36vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+#startingYear{
+  font-weight: bold;
+}
+#retIncome{
+  display: flex;
+  flex-direction: column;
+}
+
+ #retIncome1 .Income{
+   font-weight: bold;
+ }
+ #retIncome2{
+   display: flex;
+   gap: 2vw;
+ }
+ #Incomes{
+   display: flex;
+  gap: 5%;
+ }
+ #Incomes hr 
+ {
+   background-color:#7b6bff;
+ }
+ #retIncome2 .retIncome .Income{
+  font-weight: bold;
+}
+
+/* charts */
+#Contribution{
+  display: flex;
+  flex-direction: column;
+}
+#myChart{
+  width: 20vw;
+   height:10vh;
+}
+  /* Style for stacked labels */
+  /* .chartjs-render-monitor {
+    position: relative;
+  }
+
+  .chartjs-render-monitor .chartjs-size-monitor-expand,
+  .chartjs-render-monitor .chartjs-size-monitor-shrink {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .chartjs-render-monitor canvas {
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .chartjs-render-monitor canvas + canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  } */
+
