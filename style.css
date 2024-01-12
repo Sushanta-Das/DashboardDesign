@@ -277,8 +277,7 @@ flex-direction: column;
 }
 #progress{
   display: flex;
-  gap: 3vw;
-
+  justify-content: space-around;
 }
 #performance{
   display: flex;
@@ -306,7 +305,7 @@ flex-direction: column;
   width: 6em;
  
 }
-
+.mobile_hr{display: none; }
 .box .percent svg circle{
   /* position: relative; */
   /* width: 150px;  */
@@ -476,6 +475,8 @@ input[type="range"]::-ms-fill-upper {
   #container {
    
     flex-direction: column;
+    height: auto;
+    margin-bottom: 9vh;
    
   }
   #content{
@@ -496,6 +497,26 @@ width:100%;
 z-index: 1;
 justify-content: space-around;
 }
+
+.box .percent {
+  width: 6rem;
+  height: 6rem;
+  }
+  .box .percent svg {
+    height: 100%;
+    }
+    .box .percent .number {
+      top: 37%;
+      left: 36%;
+      }
+  #content {
+    gap:2vh
+  }
+  .mobile_hr{
+    display: inline ;
+  }
 }
 
-  
+.select label {
+  margin-bottom: 0;
+} 
