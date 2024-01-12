@@ -9,7 +9,7 @@ html{font-size: 12px;}
     flex-direction: row;
     height: 100vh;
     font-family: 'Roboto Slab', serif;
-    padding:2rem;
+   
 }
 
 
@@ -21,7 +21,7 @@ html{font-size: 12px;}
     flex-direction: column;
     padding: 10px;
     background-color: #fff; 
-    gap: 11vh;
+    gap: 9vh;
 }
 
 #sec1, #sec2, #sec3 {
@@ -174,7 +174,8 @@ html{font-size: 12px;}
   display: flex;
 flex-direction: column;
 justify-content: space-around;
-  padding: 6vh;
+padding: 0 5vh;
+margin-top: 4vw;
 }
 
 #RetIncomeHeader
@@ -349,6 +350,7 @@ justify-content: space-around;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+padding: 8vh;
 }
 
 #retirementStrategy_i{
