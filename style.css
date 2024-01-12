@@ -3,7 +3,7 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-html{font-size: 12px;}
+html{font-size: 13px;}
 #container {
     display: flex;
     flex-direction: row;
@@ -19,9 +19,10 @@ html{font-size: 12px;}
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    padding: 10px;
+    /* padding: 10px; */
     background-color: #fff; 
-    gap: 9vh;
+
+    color:#afafaf
 }
 
 #sec1, #sec2, #sec3 {
@@ -33,13 +34,22 @@ html{font-size: 12px;}
 
 .menuIcons {
     margin-right: 10px;
+  cursor: pointer;
+}
+
+.menuIcons:nth-child(1) 
+{
+  background-color: #3e2edf;
+  color: white;
+  border-radius: 11px;
+  padding: 7px;
 }
 
 .material-symbols-outlined {
    
     font-size: 24px;
 }
-
+.search { display: none;}
 #menubar #sec1 img {
     max-width: 100%;
     height: auto;
@@ -56,17 +66,18 @@ html{font-size: 12px;}
  #menubar #sec2{
     gap:2vh;
     margin-bottom: 25vh;
+    align-items: center;
  }
 
 
 
 /* First Component  */
 #comp-1{
-    padding: 8vh;
+  padding: 4vw;
     background-color: #fafafa;
     display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  
   gap: 2vh;
 
 } 
@@ -174,8 +185,13 @@ html{font-size: 12px;}
   display: flex;
 flex-direction: column;
 justify-content: space-around;
-padding: 0 5vh;
-margin-top: 4vw;
+margin-top: 5vw;
+gap: 3vh;
+padding: 5vw;
+}
+.flex-column{
+display: flex;
+flex-direction: column;
 }
 
 #RetIncomeHeader
@@ -183,7 +199,7 @@ margin-top: 4vw;
   color:#5745ff
 }
 #RetirementIncome{
-  width: 36vw;
+ 
   display: flex;
   flex-direction: column;
   gap: 5vh;
@@ -201,11 +217,11 @@ margin-top: 4vw;
  }
  #retIncome2{
    display: flex;
-   gap: 2vw;
+   gap: 6vw;
  }
  #Incomes{
    display: flex;
-  gap: 5%;
+   gap: 6vw;
  }
  #Incomes hr 
  {
@@ -220,9 +236,10 @@ margin-top: 4vw;
   display: flex;
   flex-direction: column;
 }
+#contributionTitle{font-weight: bold;}
 #myChart{
   width: 20vw;
-   height:10vh;
+   height:12vw;
 }
 
  select {
@@ -249,6 +266,10 @@ margin-top: 4vw;
 #Comparing-to-peers{
   display: flex;
   flex-direction: column;
+  gap: 2vh;
+}
+#Comparing-to-peers #head {
+  font-weight: bold;
 }
 #content{
   display: flex;
@@ -256,6 +277,7 @@ margin-top: 4vw;
 }
 #progress{
   display: flex;
+  gap: 3vw;
 
 }
 #performance{
@@ -281,7 +303,7 @@ margin-top: 4vw;
 }
 .box .percent svg {
   /* position: relative; */
-  width: 150px;
+  width: 6em;
  
 }
 
@@ -321,7 +343,7 @@ margin-top: 4vw;
   /* width: 150px;
   height: 150px; */
   top: 50%;
-  left: 38%;
+  left: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,8 +371,9 @@ margin-top: 4vw;
 #comp-3{
 display: flex;
 flex-direction: column;
-justify-content: space-between;
-padding: 8vh;
+
+padding: 2vw 4vw 3vw 1vw;
+gap: 3vh;
 }
 
 #retirementStrategy_i{
@@ -445,3 +468,34 @@ input[type="range"]::-ms-fill-upper {
 #housingadvance p{
   margin: 0;
 }
+
+
+
+/*mobile view*/
+@media only screen and (max-width: 600px) {
+  #container {
+   
+    flex-direction: column;
+   
+  }
+  #content{
+    flex-direction: column;
+  }
+  .search{display:inline;}
+ #sec1 , #sec3 {
+     display: none;
+ } 
+   
+#menubar #sec2 {
+position: fixed;
+flex-direction: row;
+bottom: 0;
+margin-bottom: 0;
+background-color: white;
+width:100%;
+z-index: 1;
+justify-content: space-around;
+}
+}
+
+  
