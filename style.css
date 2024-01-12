@@ -24,7 +24,9 @@ html{font-size: 13px;}
 
     color:#afafaf
 }
-
+.notification{
+  display: none;
+}
 #sec1, #sec2, #sec3 {
     display: flex;
     padding: 10px;
@@ -447,7 +449,7 @@ input[type="range"]::-ms-fill-upper {
 }
 
 #Update {
-  color:#dbd6ff;
+  color:#eae7ff;
   background-color: #3e2be9;
   border-radius: 8px;
   border: none;
@@ -476,6 +478,7 @@ input[type="range"]::-ms-fill-upper {
    
     flex-direction: column;
     height: auto;
+    align-items: center;
     margin-bottom: 9vh;
    
   }
@@ -515,8 +518,25 @@ justify-content: space-around;
   .mobile_hr{
     display: inline ;
   }
+  #comp-1 {
+    background-color: #ffffff;
+    }
+    #otherbalance {flex-direction: row;}
+    #dropdownMenuButton{
+      width:90%;
+    }
+    .notification{display: inline;
+    position: fixed;
+    top: 3vh;
+    right:10vw;
+  }
+  #Incomes {
+    flex-direction: column;
+    }
 }
-
+#today{padding: 3vh;
+  background-color: #fafafa;
+  width: 96%;}
 .select label {
   margin-bottom: 0;
 } 
