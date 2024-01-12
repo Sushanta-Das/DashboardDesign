@@ -3,12 +3,13 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-html{font-size: 14px;}
+html{font-size: 12px;}
 #container {
     display: flex;
     flex-direction: row;
     height: 100vh;
     font-family: 'Roboto Slab', serif;
+    padding:2rem;
 }
 
 
@@ -172,7 +173,10 @@ html{font-size: 14px;}
 #comp-2{
   display: flex;
 flex-direction: column;
+justify-content: space-around;
+  padding: 6vh;
 }
+
 #RetIncomeHeader
 {
   color:#5745ff
@@ -219,31 +223,223 @@ flex-direction: column;
   width: 20vw;
    height:10vh;
 }
-  /* Style for stacked labels */
-  /* .chartjs-render-monitor {
-    position: relative;
-  }
 
-  .chartjs-render-monitor .chartjs-size-monitor-expand,
-  .chartjs-render-monitor .chartjs-size-monitor-shrink {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+ select {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  appearance:none;
+  outline:0;
+  box-shadow:none;
+  border:0!important;
+  background: #ffffff;
+  background-image: none;
+
+  padding: 0 .5em;
+  
+  cursor:pointer;
+ }
+.select{  display: flex;}
+  .select::after{
+    content: '\25BC';
+    color:#7b7b7b;
+  }
+  
+#Comparing-to-peers{
+  display: flex;
+  flex-direction: column;
+}
+#content{
+  display: flex;
+
+}
+#progress{
+  display: flex;
+
+}
+#performance{
+  display: flex;
+  flex-direction: row;
+}
+.box{
+  
+  width: 21%;
+  height: 69%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  /* box-shadow: 0 30px 60px rgba(0,0,0,.2); */
+}
+.box .percent {
+  position: relative;
+  top: -15px;
+  width: 85%;
+  height: 56%;
+}
+.box .percent svg {
+  /* position: relative; */
+  width: 150px;
+ 
+}
+
+.box .percent svg circle{
+  /* position: relative; */
+  /* width: 150px;  */
+  /* height: 150px; */
+  fill: none;
+  stroke-width: 6;
+  stroke: #000;
+  transform: translate(5px,5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+.box .percent svg circle:nth-child(1){
+  stroke-dashoffset: 0;
+  stroke: #d3f7ee;
+  stroke-width: 5;
+}
+.box .percent svg#i circle:nth-child(2){
+  stroke-dashoffset:272;
+  stroke: #22d6aa;
+  stroke-width: 9;
+}
+.box .percent svg#ii circle:nth-child(2){
+  stroke-dashoffset:238;
+  stroke: #22d6aa;
+  stroke-width: 9;
+}
+.box .percent svg#iii circle:nth-child(2){
+  stroke-dashoffset:311;
+  stroke: #22d6aa;
+  stroke-width: 9;
+}
+.box .percent .number {
+  position: absolute;
+  /* width: 150px;
+  height: 150px; */
+  top: 50%;
+  left: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#999;
+}
+.box .percent .number h2{
+  font-size: 1rem;
+}
+
+.box .percent .number h2 span{
+  font-size: 1rem;
+  position: absolute;
+  top: -25%;
+
+}
+
+.box .text {
+ font-size: 1rem;  color:#999;
+ margin-bottom: 0;
+}
+
+
+
+/* Component 3*/
+#comp-3{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+#retirementStrategy_i{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1vw;
+}
+
+#retirementStrategy{
+  display:flex;
+  flex-direction: column;
+align-items: center;
+gap:2vw;
+background-color: #fafafa;
+border-radius: 20px;
+padding: 1.5rem;
+
+}
+.emp_detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.rangeInput{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  input[type='range'] {
     overflow: hidden;
-    visibility: hidden;
-    pointer-events: none;
+    width: 80px;
+    
+  */
+    /* -webkit-appearance: none; */
+   
+  
+/*   
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #13bba4;
+    margin-top: -1px;
   }
+  */
+  /* input[type='range']::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 10px;
+    cursor: ew-resize;
+    border: none;
+    background: #ffffff;
+    box-shadow: -80px 0 0 80px #616161;
+  } 
+ */
 
-  .chartjs-render-monitor canvas {
-    position: relative;
-    z-index: 1;
-    pointer-events: none;
-  }
+/** FF*/
+input[type="range"]::-moz-range-progress {
+background-color: #6898f2; 
+}
+input[type="range"]::-moz-range-track {  
+background-color: #e7e7e7;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #73a4ff;  
+}
+input[type="range"]::-ms-fill-upper {  
+  background-color: #d0d0d0; 
+}
 
-  .chartjs-render-monitor canvas + canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-  } */
+#Update {
+  color:#dbd6ff;
+  background-color: #3e2be9;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+}
+.docs{
+  color:#4935ff
+}
 
+#housingadvance{
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  border-left: 2px solid #3e2be9;
+  gap:0.3rem
+}
+#housingadvance p{
+  margin: 0;
+}

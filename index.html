@@ -139,12 +139,117 @@
                     <canvas id="myChart"></canvas>
                     <script src="Script.js"></script>
                 </div>
+            </div>
+            <div id="Comparing-to-peers">
+                <div id="head">How do I compare to my peers</div>
+                <div id="desc">These numbers represent current goal achievement</div>
 
+                <div id="content">
+                    <div id="filter">
+                        <div class="select">
+                            <label for="format">Age:</label>
+                            <select name="format" id="format">
+                                <option selected disabled>Under 30</option>
+                                <option value="30-40">30-40</option>
+                                <option value="40-50">40-50</option>
+
+                            </select>
+                        </div>
+                        <div class="select">
+                            <label for="format">Salary:</label>
+                            <select name="format" id="format">
+                                <option selected>K 20 - K 30</option>
+                                <option value="40-50">K 40 - K 50</option>
+                                <option value="60-70">K 60 - K 70</option>
+
+                            </select>
+                        </div>
+                        <div class="select">
+                            <label for="format">Gender:</label>
+                            <select name="format" id="format">
+                                <option selected value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div id="progress">
+                        <div class="box">
+                            <div class="percent">
+                                <svg id="i">
+                                    <circle cx="35" cy="35" r="35"></circle>
+                                    <circle cx="35" cy="35" r="35"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>78<span>%</span></h2>
+                                </div>
+                            </div>
+                            <h2 class="text">Average</h2>
+                        </div>
+                        <div class="box">
+                            <div class="percent">
+                                <svg id="ii">
+                                    <circle cx="35" cy="35" r="35"></circle>
+                                    <circle cx="35" cy="35" r="35"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>95<span>%</span></h2>
+                                </div>
+                            </div>
+                            <h2 class="text">Top</h2>
+                        </div>
+                        <div class="box">
+                            <div class="percent">
+                                <svg id="iii">
+                                    <circle cx="35" cy="35" r="35"></circle>
+                                    <circle cx="35" cy="35" r="35"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>59<span>%</span></h2>
+                                </div>
+                            </div>
+                            <h2 class="text">Me</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="comp-3">
+            <div id="retirementStrategy">
+                <div id="retirementStrategy_i">
+                    <h4>Retirement Strategy</h4>
+                    <label for="empCont">Employee Contribution</label>
+                    <div class="rangeInput"><input type="range" val="12" min="0" max="100" name="empCont" id=""
+                            oninput="this.nextElementSibling.value = this.value">
+                        <output>12</output>
+                    </div>
+                    <label for="empCont">Retirement Age</label>
+                    <div class="rangeInput"><input type="range" val="65" min="30" max="80" name="empCont" id=""
+                            oninput="this.nextElementSibling.value = this.value">
+                        <output>65</output>
+                    </div>
+                    <hr>
+                    <div class="emp_detail">
+                        <div> Employer Contribution:</div>
+                        <div> 8.4%</div>
+                    </div>
+                    <div class="emp_detail">
+                        <div> Interest Rate:</div>
+                        <div> 5%</div>
+                    </div>
+                    <button id="Update">Update</button>
+                </div>
+                <div class="docs">View Help Docs ></div>
 
             </div>
-            <div id="Comparing-to-peers"></div>
+            <div id="housingadvance">
+                <p>Are you considering a </p>
+                <p><b>Housing Advance ?</b></p>
+                <p>Limited time reduced interest</p>
+                <p class="docs">Learn More ></p>
+            </div>
         </div>
-        <div id="comp-3"></div>
     </div>
 </body>
 
