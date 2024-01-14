@@ -286,8 +286,8 @@ flex-direction: column;
   flex-direction: row;
 }
 .box{
+  width: 35%;
   
-  width: 21%;
   height: 69%;
   display: flex;
   justify-content: center;
@@ -301,6 +301,7 @@ flex-direction: column;
   top: -15px;
   width: 85%;
   height: 56%;
+
 }
 .box .percent svg {
   /* position: relative; */
@@ -325,17 +326,17 @@ flex-direction: column;
   stroke-width: 5;
 }
 .box .percent svg#i circle:nth-child(2){
-  stroke-dashoffset:272;
+  stroke-dashoffset: 296;
   stroke: #22d6aa;
   stroke-width: 9;
 }
 .box .percent svg#ii circle:nth-child(2){
-  stroke-dashoffset:238;
+  stroke-dashoffset: 266;
   stroke: #22d6aa;
   stroke-width: 9;
 }
 .box .percent svg#iii circle:nth-child(2){
-  stroke-dashoffset:311;
+  stroke-dashoffset: 333;
   stroke: #22d6aa;
   stroke-width: 9;
 }
@@ -343,19 +344,23 @@ flex-direction: column;
   position: absolute;
   /* width: 150px;
   height: 150px; */
-  top: 50%;
-  left: 50%;
+  top: 40%;
+left: 31%;
+  color: #383838;
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  color:#999;
+  
+  font-size: 1.5rem;
 }
+
 .box .percent .number h2{
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .box .percent .number h2 span{
-  font-size: 1rem;
+  font-size: 1.5 rem;
   position: absolute;
   top: -25%;
 
@@ -500,7 +505,7 @@ width:100%;
 z-index: 1;
 justify-content: space-around;
 }
-
+.box {width: 21%;}
 .box .percent {
   width: 6rem;
   height: 6rem;
@@ -509,8 +514,8 @@ justify-content: space-around;
     height: 100%;
     }
     .box .percent .number {
-      top: 37%;
-      left: 36%;
+      top: 33%;
+left: 27%;
       }
   #content {
     gap:2vh
